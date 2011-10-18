@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FalconerDevelopment.MantisConnect.Model", "FalconerDevelopment.MantisConnect.Model\FalconerDevelopment.MantisConnect.Model.csproj", "{19E0633D-D76C-4A36-8312-76E6CEA324AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FalconerDevelopment.MantisConnect", "FalconerDevelopment.MantisConnect\FalconerDevelopment.MantisConnect.csproj", "{0CBD1595-3AE6-4F74-8E9D-41672C1EEFA3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{19E0633D-D76C-4A36-8312-76E6CEA324AE} = {19E0633D-D76C-4A36-8312-76E6CEA324AE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MantisConnect.Test", "FalconerDevelopment.MantisConnect.Test\MantisConnect.Test.csproj", "{216DADC3-BE30-423E-B60E-A2AF235F99B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19E0633D-D76C-4A36-8312-76E6CEA324AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E0633D-D76C-4A36-8312-76E6CEA324AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E0633D-D76C-4A36-8312-76E6CEA324AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19E0633D-D76C-4A36-8312-76E6CEA324AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CBD1595-3AE6-4F74-8E9D-41672C1EEFA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CBD1595-3AE6-4F74-8E9D-41672C1EEFA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CBD1595-3AE6-4F74-8E9D-41672C1EEFA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CBD1595-3AE6-4F74-8E9D-41672C1EEFA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{216DADC3-BE30-423E-B60E-A2AF235F99B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{216DADC3-BE30-423E-B60E-A2AF235F99B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{216DADC3-BE30-423E-B60E-A2AF235F99B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

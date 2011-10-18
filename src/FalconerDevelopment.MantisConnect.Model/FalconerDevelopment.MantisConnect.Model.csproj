@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19E0633D-D76C-4A36-8312-76E6CEA324AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FalconerDevelopment.MantisConnect.Model</RootNamespace>
+    <AssemblyName>FalconerDevelopment.MantisConnect.Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\build\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\build\Debug\FalconerDevelopment.MantisConnect.Model.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\build\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\build\Release\FalconerDevelopment.MantisConnect.Model.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\ProductAssemblyInfo.cs">
+      <Link>Properties\ProductAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Account.cs" />
+    <Compile Include="CustomFieldDefinition.cs" />
+    <Compile Include="CustomFieldType.cs" />
+    <Compile Include="CustomFieldValue.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="IAccount.cs" />
+    <Compile Include="IAttachment.cs" />
+    <Compile Include="ICustomFieldDefinition.cs" />
+    <Compile Include="ICustomFieldValue.cs" />
+    <Compile Include="IFilter.cs" />
+    <Compile Include="IIssue.cs" />
+    <Compile Include="IIssueAttachment.cs" />
+    <Compile Include="IIssueHeader.cs" />
+    <Compile Include="IMCAttribute.cs" />
+    <Compile Include="INote.cs" />
+    <Compile Include="IProject.cs" />
+    <Compile Include="IProjectAttachment.cs" />
+    <Compile Include="IProjectVersion.cs" />
+    <Compile Include="IRelationship.cs" />
+    <Compile Include="Issue.cs" />
+    <Compile Include="IssueAttachment.cs" />
+    <Compile Include="IssueHeader.cs" />
+    <Compile Include="MCAttribute.cs" />
+    <Compile Include="Note.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="ProjectAttachment.cs" />
+    <Compile Include="ProjectVersion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relationship.cs" />
+    <Compile Include="Service References\MantisConnectWebservice\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MantisConnectWebservice\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MantisConnectWebservice\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MantisConnectWebservice\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MantisConnectWebservice\configuration91.svcinfo" />
+    <None Include="Service References\MantisConnectWebservice\FalconerDevelopment.MantisConnect.Model.MantisConnectWebservice.AccountData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MantisConnectWebservice\FalconerDevelopment.MantisConnect.Model.MantisConnectWebservice.CustomFieldDefinitionData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MantisConnectWebservice\FalconerDevelopment.MantisConnect.Model.MantisConnectWebservice.FilterData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MantisConnectWebservice\FalconerDevelopment.MantisConnect.Model.MantisConnectWebservice.IssueData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MantisConnectWebservice\FalconerDevelopment.MantisConnect.Model.MantisConnectWebservice.IssueHeaderData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MantisConnectWebservice\FalconerDevelopment.MantisConnect.Model.MantisConnectWebservice.ObjectRef.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MantisConnectWebservice\FalconerDevelopment.MantisConnect.Model.MantisConnectWebservice.ProjectAttachmentData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MantisConnectWebservice\FalconerDevelopment.MantisConnect.Model.MantisConnectWebservice.ProjectData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MantisConnectWebservice\FalconerDevelopment.MantisConnect.Model.MantisConnectWebservice.ProjectVersionData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MantisConnectWebservice\mantisconnect1.wsdl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
