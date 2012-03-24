@@ -4,3 +4,5 @@ src/*/obj
 src/_ReSharper*
 src/*.user
 src/*.suo
+src/*/*.user
+src/*/*.suo

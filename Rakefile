@@ -3,7 +3,7 @@ require 'albacore'
 require 'rake'
 require 'rubygems'
 
-VERSION = "0.3.0.3"
+VERSION = "0.3.0.4"
 
 # http://jasonseifer.com/2010/04/06/rake-tutorial
 
@@ -15,13 +15,13 @@ Albacore.configure do |config|
 	
 	desc "Compiles and builds installer project"
 	exec :clean do |cmd|
-		cmd.command = "C:/Program Files/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com"
+		cmd.command = "C:/Program Files/Microsoft Visual Studio 10.0/Common7/IDE/devenv.com"
 		cmd.parameters = "src/FalconerDevelopment.MantisConnect.sln /Clean"
 	end
 	
 	desc "Compiles installer project"
 	exec :compile => [:clean, :assemblyinfo] do |cmd|
-		cmd.command = "C:/Program Files/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com"
+		cmd.command = "C:/Program Files/Microsoft Visual Studio 10.0/Common7/IDE/devenv.com"
 		cmd.parameters = 'src/FalconerDevelopment.MantisConnect.sln /Build "Release|Any CPU"'
 	end
 	
@@ -31,7 +31,7 @@ Albacore.configure do |config|
 	  asm.file_version = VERSION
 	  asm.company_name = "Falconer Development LLC"
 	  asm.product_name = "FalconerDevelopment Mantis Connect"
-	  asm.copyright = "Copyright Falconer Development LLC 2011"
+	  asm.copyright = "Copyright Falconer Development LLC 2012"
 	  asm.output_file = "src/ProductAssemblyInfo.cs"
 	end
 	

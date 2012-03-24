@@ -1,5 +1,5 @@
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FalconerDevelopment.MantisConnect.Model", "FalconerDevelopment.MantisConnect.Model\FalconerDevelopment.MantisConnect.Model.csproj", "{19E0633D-D76C-4A36-8312-76E6CEA324AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FalconerDevelopment.MantisConnect", "FalconerDevelopment.MantisConnect\FalconerDevelopment.MantisConnect.csproj", "{0CBD1595-3AE6-4F74-8E9D-41672C1EEFA3}"

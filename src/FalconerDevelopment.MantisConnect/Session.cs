@@ -1327,7 +1327,14 @@ namespace FalconerDevelopment.MantisConnect
                                          ? BasicHttpSecurityMode.TransportWithMessageCredential
                                          : BasicHttpSecurityMode.None);
 
-            return new MantisConnectPortTypeClient(basicHttpBinding, new EndpointAddress(Url));
+            var client = new MantisConnectPortTypeClient(basicHttpBinding, new EndpointAddress(Url));
+
+            if (IsSecure())
+            {
+                client.ClientCredentials.UserName.UserName = Username;
+                client.ClientCredentials.UserName.Password = Password;
+            }
+            return client;
         }
 
         private bool IsSecure()
